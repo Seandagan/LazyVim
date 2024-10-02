@@ -246,7 +246,7 @@ return {
       { "<leader>sW", LazyVim.pick("grep_cword", { root = false }), desc = "Word (cwd)" },
       { "<leader>sw", LazyVim.pick("grep_visual"), mode = "v", desc = "Selection (Root Dir)" },
       { "<leader>sW", LazyVim.pick("grep_visual", { root = false }), mode = "v", desc = "Selection (cwd)" },
-      { "<leader>uC", LazyVim.pick("colorschemes"), desc = "Colorscheme with Preview" },
+      --{ "<leader>uC", LazyVim.pick("colorschemes"), desc = "Colorscheme with Preview" },
       {
         "<leader>ss",
         function()
