@@ -11,10 +11,10 @@ map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, 
 map({ "n", "x" }, "<Up>", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
 
 -- Move to window using the <ctrl> hjkl keys
---map("n", "<C-h>", "<C-w>h", { desc = "Go to Left Window", remap = true })
---map("n", "<C-j>", "<C-w>j", { desc = "Go to Lower Window", remap = true })
---map("n", "<C-k>", "<C-w>k", { desc = "Go to Upper Window", remap = true })
---map("n", "<C-l>", "<C-w>l", { desc = "Go to Right Window", remap = true })
+map("n", "<C-h>", "<C-w>h", { desc = "Go to Left Window", remap = true })
+map("n", "<C-j>", "<C-w>j", { desc = "Go to Lower Window", remap = true })
+map("n", "<C-k>", "<C-w>k", { desc = "Go to Upper Window", remap = true })
+map("n", "<C-l>", "<C-w>l", { desc = "Go to Right Window", remap = true })
 
 -- Resize window using <ctrl> arrow keys
 map("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase Window Height" })
@@ -119,12 +119,12 @@ LazyVim.toggle.map("<leader>uf", LazyVim.toggle.format())
 LazyVim.toggle.map("<leader>uF", LazyVim.toggle.format(true))
 LazyVim.toggle.map("<leader>us", LazyVim.toggle("spell", { name = "Spelling" }))
 LazyVim.toggle.map("<leader>uw", LazyVim.toggle("wrap", { name = "Wrap" }))
-LazyVim.toggle.map("<leader>uL", LazyVim.toggle("relativenumber", { name = "Relative Number" }))
+--LazyVim.toggle.map("<leader>uL", LazyVim.toggle("relativenumber", { name = "Relative Number" }))
 LazyVim.toggle.map("<leader>ud", LazyVim.toggle.diagnostics)
-LazyVim.toggle.map("<leader>ul", LazyVim.toggle.number)
+--LazyVim.toggle.map("<leader>ul", LazyVim.toggle.number)
 LazyVim.toggle.map( "<leader>uc", LazyVim.toggle("conceallevel", { values = { 0, vim.o.conceallevel > 0 and vim.o.conceallevel or 2 } }))
-LazyVim.toggle.map("<leader>uT", LazyVim.toggle.treesitter)
-LazyVim.toggle.map("<leader>ub", LazyVim.toggle("background", { values = { "light", "dark" }, name = "Background" }))
+--LazyVim.toggle.map("<leader>uT", LazyVim.toggle.treesitter)
+--LazyVim.toggle.map("<leader>ub", LazyVim.toggle("background", { values = { "light", "dark" }, name = "Background" }))
 if vim.lsp.inlay_hint then
   LazyVim.toggle.map("<leader>uh", LazyVim.toggle.inlay_hints)
 end
