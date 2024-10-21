@@ -126,7 +126,7 @@ LazyVim.toggle.map( "<leader>uc", LazyVim.toggle("conceallevel", { values = { 0,
 --LazyVim.toggle.map("<leader>uT", LazyVim.toggle.treesitter)
 --LazyVim.toggle.map("<leader>ub", LazyVim.toggle("background", { values = { "light", "dark" }, name = "Background" }))
 if vim.lsp.inlay_hint then
-  LazyVim.toggle.map("<leader>uh", LazyVim.toggle.inlay_hints)
+  LazyVim.toggle.map("<leader>ch", LazyVim.toggle.inlay_hints)
 end
 
 -- lazygit
